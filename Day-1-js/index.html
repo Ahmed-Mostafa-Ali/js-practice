@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <!--linking Icon-->
+    <link rel="icon" href="./images/pexels-photo-344738.webp">
+    <!--linking Remix-Icon-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--calling Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Nunito:wght@400;600;700&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+     <!--linking css-->
+     <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!--I will use reguler Expression || another validate -->
+    <!--form-->
+    <div class="container">
+        <form  id="form" class="form">
+            <h2>Register here</h2>
+            <div class="form-control">
+                <label for="userName">User Name</label>
+                <input type="text" id="userName" placeholder="Enter Your Name"></input>
+                <small id="small">please write a letter here</small>
+            </div>
+            <div class="form-control">
+                <label for="emailUser">Your Email</label>
+                <input type="text" id="emailUser" placeholder="Enter Your Email"></input>
+                <small id="small">please write an Email </small>
+            </div>
+            <div class="form-control">
+                <label for="userPassword">password</label>
+                <input type="password" id="userPassword" placeholder="Enter Your password"></input>
+                <small id="small">not valid password</small>
+            </div>
+            <div class="form-control">
+                <label for="confirmPassword">confirm Password</label>
+                <input type="password" id="confirmPassword" placeholder="repeat your password"></input>
+                <small id="small">not confirm for the above password</small>
+            </div>
+            <button>Submit</button>
+        </form>
+    </div>
+   
+    <!--linking JavaScript-->
+    <script src="./js/main.js"></script>
+</body>
+</html>
